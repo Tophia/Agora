@@ -3,9 +3,9 @@ const { RtcTokenBuilder, RtcRole } = require('agora-access-token');
 
 const PORT = 8080;
 
-const APP_ID = 'f956daacefc9425f8f7b759ce0b22e63'
+const APP_ID = 'appID from agora console'
 //process.env.APP_ID;
-const APP_CERTIFICATE ='1e9d00b1d08f4abda75e9dbb63a99a17'
+const APP_CERTIFICATE ='app_certificate_id from agora console'
 // process.env.APP_CERTIFICATE;
 
 const app = express();
@@ -18,7 +18,7 @@ const nocache = (req, resp, next) => {
 }
 
 const generateAccessToken = (req,resp) => {
-    console.log("......",req.query.channelName,req.query.role,req.query.uid);
+    // console.log("......",req.query.channelName,req.query.role,req.query.uid);
 // set response header
 resp.header('Acess-Control-Allow-Origin','*');
 // set channel name
