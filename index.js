@@ -1,13 +1,12 @@
 const express = require('express');
 const { RtcTokenBuilder, RtcRole } = require('agora-access-token');
-
+const process = require("process");
 const PORT = 8080;
 
-const APP_ID = 'appID from agora console'
+const APP_ID = 'App ID from agora project console'
 //process.env.APP_ID;
-const APP_CERTIFICATE ='app_certificate_id from agora console'
+const APP_CERTIFICATE ='App certificate from agora project console'
 // process.env.APP_CERTIFICATE;
-
 const app = express();
 
 const nocache = (req, resp, next) => {
