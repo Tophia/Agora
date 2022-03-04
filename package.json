@@ -1,0 +1,26 @@
+{
+  "name": "agora-token-server-nodejs",
+  "version": "1.0.0",
+  "description": "agora token server using node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tophia/Agora-token-server-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tophia/Agora-token-server-nodejs/issues"
+  },
+  "homepage": "https://github.com/Tophia/Agora-token-server-nodejs#readme",
+  
+  "dependencies": {
+    "agora-access-token": "^2.0.4",
+    "express": "^4.17.3"
+  }
+}
